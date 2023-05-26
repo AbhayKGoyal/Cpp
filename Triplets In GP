@@ -15,3 +15,41 @@ Explanation:
 1, 4, 16
 1, 4, 16
 4, 16, 64
+
+-------------------- Code ----------------------
+
+#include <iostream>
+#include<unordered_map>
+#include<vector>
+using namespace std;
+
+int count_triplets(vector<int> arr,int r)
+{
+    unordered_map<int, int> l_map, r_map;
+    for(int x : arr)
+        r_map[x]++;
+
+    int ans = 0;
+    for(int x : arr)
+    {
+        ans += l_map[x/r] * r_map[r*x];
+        if(r_map[x] > 0)
+            r_map[x]--, l_map[x]++;
+    }
+    return ans;
+}
+
+int main() {
+    
+    int n,r;
+    cin>>n>>r;
+    vector<int> arr(n,0);
+
+    for(int i=0;i<n;i++){
+        cin>>arr[i];
+    }
+
+    cout<<count_triplets(arr,r);
+
+    return 0;
+}
