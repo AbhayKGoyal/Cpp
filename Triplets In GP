@@ -1,0 +1,17 @@
+------------------ Question Statement -------------------
+
+You are given an array and you need to count number of
+triplets with indices (i , j, k) such that the elements at
+those indices are in geometric progression for a given
+common ratio r and i (i < j < k).
+
+Example
+Input
+arr = [1, 16, 4, 16, 64, 16]
+r=4
+Output
+з
+Explanation:
+1, 4, 16
+1, 4, 16
+4, 16, 64
