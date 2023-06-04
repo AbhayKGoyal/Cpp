@@ -1,7 +1,9 @@
 /* 
 ----------------------------------------- Question -----------------------------------
 -------------------------------------- Little Cute Cat -------------------------------
-Little cute kitten loves to write stories in a Github readme document. One day she is given a list of words, you want to help her to check if each of these words are present in the readme file.
+Little cute kitten loves to write stories in a Github readme document. One day she is 
+given a list of words, you want to help her to check if each of these words are present 
+in the readme file.
 
 Sample Input: 
 document ="little cute cat loves to code in c++, java &
